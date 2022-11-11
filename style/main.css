@@ -1,0 +1,151 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    background-color: #606060;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.6);
+    padding-bottom: 1%;
+    border-radius: 10px;
+    margin: 1%;
+    width: 100%;
+    position: sticky;
+}
+
+#monLogo {
+    width: 20%;
+    height: auto;
+}
+
+#menu_navigation > ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#menu_navigation > ul li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+#menu_navigation > ul li ul li {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+#menu_navigation > ul li:hover ul {
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+section[class=feuille] {
+    background: rgba(255, 255, 255, 0.6);
+    margin: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    width: 100%;
+}
+
+section[id=displayer_groups],
+section[id=displayer_expenses] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+}
+
+section > h1:first-child {
+    width: 100%;
+}
+
+section[id=displayer_expenses_group] {
+    width: 30%;
+}
+
+a[class=group_card],
+a[class=expense_card] {
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+a[class=group_card]:hover,
+a[class=expense_card]:hover {
+    background-color:rgba(255, 255, 255, 0.6);
+}
+
+section[id=header_group] {
+    display: flex;
+    align-items: center;
+}
+
+p[class=group_icon] {
+    margin: 2%;
+}
+
+section[id=header_group] > h1 {
+    width: 100%;
+}
+
+p[id=more] {
+    width: 100%;
+    text-align: right;
+}
+
+body[id=body_connexion] {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+}
+
+section[id=section_connexion],
+section[id=section_inscription] {
+    width: 45%;
+    height: 20%;
+}
+
+section[id=section_connexion] > form,
+section[id=section_inscription] > form {
+    width: 100%;
+}
+
+fieldset[id=fieldset_connexion],
+fieldset[id=fieldset_inscription] {
+    text-align: center;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px;
+    padding: 1%;
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+input[type=submit] {
+    border: solid 1px;
+    background-color: rgb(238, 238, 238);
+}
